@@ -1,0 +1,12 @@
+class Solution(object):
+    def shuffle(self, nums, n):
+          
+         start_i = 0
+         start_j = n
+         shuffled_list = []
+
+         for i, j in zip(range(start_i,start_i+n),range(start_j ,start_j+n)):
+             shuffled_list.append(nums[i])
+             shuffled_list.append(nums[j])
+
+         return shuffled_list
